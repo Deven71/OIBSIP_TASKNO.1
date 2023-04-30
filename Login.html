@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg fix-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/urban2.png" width="80" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Products.html">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Login.html">Login</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- login form -->
+  <div class="form-container"> -->
+    <h2>SIGN IN</h2>
+   <form onsubmit="return validation()">
+
+   <input type="text" id="input1" placeholder="Full Name"><br>
+   <span id="error-name" style="color: red; font-size: 10px;"></span><br>
+
+   <input type="email" id="input2" placeholder="Email ID"><br>
+   <span id="error-email" style="color: red; font-size: 10px;"></span><br>
+
+   <input type="number" id="input3" placeholder="Contact Number"><br>
+   <span id="error-number" style="color: red; font-size: 10px;"></span><br>
+
+   <input type="password" id="input4" placeholder="Password"><br>
+   <span id="error-password" style="color: red; font-size: 10px;"></span><br>
+
+   <input type="password" id="input5" placeholder="Confirm Password"><br>
+   <span id="error-cpassword" style="color: red; font-size: 10px;"></span><br>
+
+   <button type="submit">Register</button>
+   <button type="reset">Refresh</button>
+
+   </form>
+</div>
+
+<footer>
+  <div class="container pb-2 pt-2">
+    <div class="logo">
+      <a href="index.html">
+      <img src="images/urban2.png" width="80px" alt="image">
+    </a>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <h5>Pages Link</h5>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Documents</h5>
+        <ul>
+          <li><a href="xyz.pdf" target="_blank">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Contact Us</h5>
+        <ul>
+          <li><a href="mailto:support@coincent.ai" target="_blank">Email:support@coincent.ai</a></li>
+          <li><a href="tel:+919833869294">Call:+91 9833869294</a></li>
+          <li><a href="https://wa.me/+919833869294" target="_blank">Whatsapp:+919833869294</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Reach Us At</h5>
+      <div class="d-flex justify-content-around">
+        <div>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="">
+        <p>Urban clothing is online fashion brand established in 1998</p>
+      </div>
+    </div>
+    </div>
+    <hr>
+    <p class="text-center">Copyright &copy;2023 URBAN CLOTHING PVT LTD. All rights resrved</p>
+  </div>
+</footer>
+  
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  
+  <script>function validation(){
+    var name = document.getElementById('input1').value;
+    var email = document.getElementById('input2').value;
+    var number = document.getElementById('input3').value;
+    var password = document.getElementById('input4').value;
+    var cpassword = document.getElementById('input5').value;
+    
+    var namecheck = /^[A-Za-z ]{2,}$/;
+    var emailcheck = /^[A-Za-z0-9._]{3,}@[A-Za-z0-9]{3,}[.]{1}[A-Za-z]{2,6}$/;
+    var numbercheck = /^[6789][0-9]{9}$/;
+    var passwordcheck = /^[A-Za-z0-9_!@#$%^&*]{8,16}$/;
+    
+    if(namecheck.test(name)){
+    document.getElementById('error-name').innerHTML = " ";
+    }
+    else{
+    document.getElementById('error-name').innerHTML = "Use only Alphabets";
+    return false;
+    }
+    
+    if(emailcheck.test(email)){
+    document.getElementById('error-email').innerHTML = " ";
+    }
+    else{
+    document.getElementById('error-email').innerHTML = "Invalid Email Syntax. Ex: abc@xyz.com";
+    return false;
+    }
+    
+    if(numbercheck.test(number)){
+    document.getElementById('error-number').innerHTML = "";
+    }
+    else{
+    document.getElementById('error-number').innerHTML = "Use 10 digit valid mobile number";
+    return false;
+    }
+    
+    if(passwordcheck.test(password)){
+    document.getElementById('error-password').innerHTML = "";
+    }
+    else{
+    document.getElementById('error-password').innerHTML = "Use alphabets, number & special characters. Min: 8, Max: 16";
+    return false;
+    }
+    
+    if(cpassword.match(password)){
+    document.getElementById('error-c-password').innerHTML = "";
+    }
+    else{
+    document.getElementById('error-c-password').innerHTML = "Password does'nt match";
+    return false;
+    }
+    }
+    </script>
+</body>
+  
+</body>
+</html>
